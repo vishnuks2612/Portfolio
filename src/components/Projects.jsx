@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 const projectData = [
   { photo: WeatherImg, name: "WeatherApp" },
+  { name: "CurriculumCraft" },
 ];
 
 const Projects = () => {
