@@ -1,12 +1,18 @@
 import React from "react";
 import ProjectBox from "./ProjectBox";
 import WeatherImg from "../images/WeatherApp.png";
+import CampImg from "../images/Camp.png";
+import HuggingImg from "../images/Hugging.png";
+import RPAImg from "../images/RPA.png";
 import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
 
 const projectData = [
   { photo: WeatherImg, name: "WeatherApp" },
   { name: "CurriculumCraft" },
+  { photo: CampImg, name: "CampManagement" },
+  { photo: HuggingImg, name: "HuggingFace" },
+  { photo: RPAImg, name: "WORDtoEXCEL" },
 ];
 
 const Projects = () => {

@@ -14,6 +14,16 @@ const desc = {
       "It is a simple course recommendation used to find the best course based on the certain conditions.",
     github: "https://github.com/vishnuks2612/CourseRecommendNew.git",
   },
+  CampManagement: {
+    description:
+      "This website is created to arrange the availability of camp needed items and bed space available and the details of the employees who lived there.",
+    github: "https://github.com/vishnuks2612/camp-management.git",
+  },
+  HuggingFace: {
+    description: "Find the animal from the image using Hugging Face.",
+    github: "https://github.com/vishnuks2612/Hugging-Face.git",
+  },
+  WORDtoEXCEL: { description: "RPA project to convert word to excel" },
 };
 
 const ProjectBox = ({ projectPhoto, projectName, darkMode }) => {
@@ -36,28 +46,32 @@ const ProjectBox = ({ projectPhoto, projectName, darkMode }) => {
         <h3 className="text-xl font-semibold mb-2">{projectName}</h3>
         <p className="mb-4 flex-grow">{project.description}</p>
         <div className="flex space-x-4 mt-4">
-          <a href={project.github} target="_blank" rel="noopener noreferrer">
-            <button
-              className={`flex items-center px-4 py-2 ${
-                darkMode
-                  ? "bg-button-dark text-text-dark hover:bg-button-dark-hover"
-                  : "bg-button-light text-text-light hover:bg-button-light-hover"
-              } rounded-md shadow-md transition duration-300`}
-            >
-              <FaGithub className="mr-2" /> Github
-            </button>
-          </a>
-          <a href={project.website} target="_blank" rel="noopener noreferrer">
-            <button
-              className={`flex items-center px-4 py-2 ${
-                darkMode
-                  ? "bg-button-dark2 text-text-dark hover:bg-button-dark2-hover"
-                  : "bg-button-light2 text-text-light hover:bg-button-light2-hover"
-              } rounded-md shadow-md transition duration-300`}
-            >
-              <CgFileDocument className="mr-2" /> Site
-            </button>
-          </a>
+          {project.github && (
+            <a href={project.github} target="_blank" rel="noopener noreferrer">
+              <button
+                className={`flex items-center px-4 py-2 ${
+                  darkMode
+                    ? "bg-button-dark text-text-dark hover:bg-button-dark-hover"
+                    : "bg-button-light text-text-light hover:bg-button-light-hover"
+                } rounded-md shadow-md transition duration-300`}
+              >
+                <FaGithub className="mr-2" /> Github
+              </button>
+            </a>
+          )}{" "}
+          {project.website && (
+            <a href={project.website} target="_blank" rel="noopener noreferrer">
+              <button
+                className={`flex items-center px-4 py-2 ${
+                  darkMode
+                    ? "bg-button-dark2 text-text-dark hover:bg-button-dark2-hover"
+                    : "bg-button-light2 text-text-light hover:bg-button-light2-hover"
+                } rounded-md shadow-md transition duration-300`}
+              >
+                <CgFileDocument className="mr-2" /> Site
+              </button>
+            </a>
+          )}
         </div>
       </div>
     </div>
