@@ -9,6 +9,11 @@ const desc = {
     github: "https://github.com/vishnuks2612/Weather-App.git",
     website: "https://vishnuks2612.github.io/Weather-App/",
   },
+  CurriculumCraft: {
+    description:
+      "It is a simple course recommendation used to find the best course based on the certain conditions.",
+    github: "https://github.com/vishnuks2612/CourseRecommendNew.git",
+  },
 };
 
 const ProjectBox = ({ projectPhoto, projectName, darkMode }) => {

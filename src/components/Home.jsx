@@ -53,7 +53,7 @@ const Home = () => {
             }`}
           variants={itemVariants}
         >
-          I'M <b>Vishnu Satheesan</b>
+          <b>I'm</b> <b>Vishnu Satheesan</b>
         </motion.h1>
         <motion.div
           className={`${darkMode ? "text-typer-dark" : "text-typer-light"}`}
