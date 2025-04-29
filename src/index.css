@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css */
+:root {
+  /* Dark Mode Colors */
+  --background-color: #1F2937; /* Dark Gray */
+  --background-color2: #111827; /* Darker Gray */
+  --background-color3: #435e98; /* Blue Gray */
+  --typer-text: #d1fae5; /* Light Cyan */
+  --text-color: #F3F4F6; /* Light Gray */
+  --text-color2: #9CA3AF; /* Gray */
+  --button-color: #2563EB; /* Blue */
+  --button-color-hover: #1D4ED8; /* Darker Blue */
+  --button-color2: #16A34A; /* Green */
+  --button-color2-hover: #15803D; /* Darker Green */
+  --button-color3: #04195f; /* Dark Blue */
+  --button-color3-hover: #102652; /* Darker Blue */
+  --skill-border: #0e7490; /* Cyan */
+  --input-focus: #3B82F6; /* Blue */
+  
+  /* Light Mode Colors */
+  --background-light: #D1E9F6; /* Off-White */
+  --background-light2: #E5E7EB; /* Light Gray */
+  --background-light3: #D0D6E1; /* Light Blue Gray */
+  --typer-text-light: #1F2937; /* Dark Gray */
+  --text-light: #111827; /* Very Dark Gray */
+  --text-light2: #4B5563; /* Medium Gray */
+  --button-light: #3B82F6; /* Blue */
+  --button-light-hover: #2563EB; /* Darker Blue */
+  --button-light2: #10B981; /* Light Green */
+  --button-light2-hover: #059669; /* Darker Green */
+  --button-light3: #1D4ED8; /* Blue */
+  --button-light3-hover: #1E40AF; /* Darker Blue */
+  --skill-border-light: #3B82F6; /* Blue */
+  --input-focus-light: #2563EB; /* Blue */
+}
